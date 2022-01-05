@@ -7,6 +7,13 @@ client.login(process.env.token)
 client.on("messageCreate", (message) => {
 
 
+    if(message.content == "!check"){
+        message.channel("Il Bot è ONLINE!")
+    }
+    else{
+        message.channel("Il Bot è OFFLINE!")
+    }
+
     if(message.content == "!on"){
         if(message.member.roles.cache.has("928268650593533973")) {
             message.channel.send("Il bot funziona correttamente")
