@@ -8,7 +8,7 @@ client.on("messageCreate", (message) => {
 
 
     if(message.content == "!check"){
-        message.channel("Il Bot è ONLINE!")
+        message.channel.send("Il Bot è ONLINE!")
     }
     else{
         message.channel("Il Bot è OFFLINE!")
