@@ -4,6 +4,10 @@ const client = new Discord.Client(
 )
 client.login(process.env.token)
 
+client.on("ready", () => {
+    console.log("Bot ONLINE!")
+})
+
 client.on("messageCreate", (message) => {
 
 
@@ -104,8 +108,4 @@ client.on("messageCreate", (message) => {
             msg.delete({timeout: 2000})
         })
     }
-})
-
-client.on("ready", () => {
-    console.log("Bot ONLINE!")
 })
