@@ -1,6 +1,6 @@
 const Discord = require('discord.js')
-const client = new Discord.Client(
-    {intents: ["GUILDS","GUILD_MESSAGES","GUILD_MEMBERS"]}
+const client = new Discord(
+    {intents: ["GUILD_MEMEBERS","GUILDS","GUILD_MESSAGES"]}
 )
 
 client.on("ready", () => {
