@@ -6,8 +6,7 @@ const client = new Discord.Client(
 var checkBot = client.on("ready")
 
 client.on("ready", () =>{
-   var canale = client.channels.cache.get("928337857876209737")
-   message.channel.send(canale)
+   console.log("Bot ONLINE!")
 })
 
 client.on("messageCreate", (message) => {
