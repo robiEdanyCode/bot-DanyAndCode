@@ -1,0 +1,14 @@
+{
+  "name": "danyandcode",
+  "version": "1.0.0",
+  "description": "Bot discord del server di DanyAndCode",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Daniel Brienza",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.5.0"
+  }
+}
